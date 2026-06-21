@@ -97,9 +97,10 @@
   .contact h2{font-family:var(--sans);font-weight:700;font-size:clamp(30px,4.4vw,48px);letter-spacing:-.025em;margin:14px 0 16px}
   .contact h2 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent)}
   .contact p.invite{font-size:clamp(18px,2.1vw,21px);color:var(--ink);max-width:48ch;margin-bottom:30px}
-  .clinks{display:flex;flex-wrap:wrap;gap:14px 30px;align-items:center}
-  .clinks a{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--taupe);padding-bottom:4px;transition:border-color .25s ease,color .25s ease}
-  .clinks a:hover,.clinks a:focus-visible{color:var(--accent-ink);border-color:var(--accent)}
+  .clinks{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center}
+  .clinks a{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--taupe);color:var(--ink);text-decoration:none;transition:border-color .25s ease,color .25s ease,background .25s ease}
+  .clinks a:hover,.clinks a:focus-visible{color:var(--accent-ink);border-color:var(--accent);background:rgba(206,86,40,.06)}
+  .clinks a svg{width:20px;height:20px;fill:currentColor}
 
   footer.foot{padding:40px 0 46px;border-top:1px solid var(--rule)}
   footer.foot .wrap{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:18px}
@@ -188,8 +189,8 @@
         <h2>Let&rsquo;s talk <em>shop</em>.</h2>
         <p class="invite">I&rsquo;m always glad for a good conversation about strategy, deals, or building businesses. Email is the fastest way to reach me.</p>
         <div class="clinks">
-          <a href="mailto:charlesmpapa@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/charlespapagiannopoulos/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:charlesmpapa@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm.5 1.4v10.1h17V6.4L12 12.5 3.5 6.4zM5.1 6l6.9 5 6.9-5H5.1z"/></svg></a>
+          <a href="https://www.linkedin.com/in/charlespapagiannopoulos/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
         </div>
       </div>
     </section>
